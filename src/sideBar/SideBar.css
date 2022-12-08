@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+}
+
+.container{
+    display:flex;
+}
+
+.out{
+    position: relative;
+}
+
+.inner{
+    position: fixed;
+    height: 100vh;
+}
+
+main{
+    width: 100vw;
+    margin-left: 30px;
+}
+.sidebar{
+    background: aliceblue;
+    height: 100%;
+    position: fixed;
+    width: 90px;
+    transition: all ease-out 0.5s;
+    padding-top: 5px;
+}
+
+.top_section{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+.top_section:hover{
+    background-color: #e3eef4;
+    color: #004878;
+    transition: all 0.5s;
+}
+
+.bars{
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    /* padding-bottom: 20px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .bar-logo{
+    font-size: 20px;
+    color: #004878;
+    cursor: pointer;
+  }
+
+  .Sidebar-logo{
+    width: 80%;
+    height: 80%;
+    margin-left: 15px;
+  }
+
+  .Rapport-title{
+    padding-left: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #004878;
+  }
+
+
+.link{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    color: #004878;
+    padding: 40px 10px;
+    gap: 10px;
+    word-wrap: break-word;
+    transition: all 0.5s;
+}
+.link:hover{
+    background-color: #e3eef4;
+    color: #004878;
+    transition: all 0.5s;
+}
+
+.icon{
+    font-size: 20px;
+    font-weight: bold;
+}
+.link_text{
+    color: #004878;
+    width: 90%;
+    font-size: 17px;
+    font-weight: bold;
+    word-wrap: break-word;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+    .link_text{
+        font-size: 15px;
+    }
+    .icon{
+        font-size: 15px;
+    }
+    .sidebar{
+        width: 50px;
+    }
+
+  }
+  

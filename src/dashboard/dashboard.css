@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.dash-wrap {
+  width: 100%;
+  background: rgba(240, 248, 255, 0.342);
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+}
+
+.dashboard-navbar {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 7vh;
+  /* background-color: aliceblue; */
+}
+
+.dashboard {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 30px;
+  color: #004777;
+  /* margin-left: 230px; */
+}
+
+.dashboard-btns {
+  /* margin-left: 50px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.dashboard-btn-red {
+  padding: 10px;
+  text-align: center;
+  background-color: red;
+  color: aliceblue;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.dashboard-btn-red:hover {
+  transition: ease-in-out 0.5s;
+  scale: 1.2;
+}
+
+.dashboard-banner {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: 2px solid #eee;
+  width: 70vw;
+  /* height: 30vh; */
+  padding: 20px;
+  background-color: #162253;
+  /* border: 3px solid #004777; */
+  border-radius: 10px;
+  color: aliceblue;
+  margin: 30px auto;
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+.dashboard-box {
+  margin-left: 70px;
+}
+
+.dashboard-text {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.dashboard-name {
+  font-size: 20px;
+}
+
+.dashboard-welcome {
+  margin-top: 20px;
+  font-size: 50px;
+}
+.dashboard-p {
+  color: aliceblue;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-left: 10px;
+}
+
+.dashboard-img {
+  width: 300px;
+  height: 25vh;
+  border-radius: 5px;
+}
+
+.dashboard-line {
+  margin: 20px auto;
+  width: 70vw;
+  height: 2px;
+  background-color: #004777;
+}
+
+.dashboard-schools {
+  width: 70vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 10px auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.dashboard-container {
+  background-color: #004777;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 10px;
+  color: aliceblue;
+}
+
+.dashboard-filter {
+  width: 70vw;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashboard-connect {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #004777;
+}
+
+.dashboard-filterIcon {
+  width: 20vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #004777;
+  padding: 5px;
+  border-radius: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.filterInput {
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 5px;
+  font-weight: bold;
+  color: #004777;
+}
+
+@media screen and (max-width: 600px) {
+  .dashboard {
+    font-size: 15px;
+  }
+
+  .dashboard-btns {
+    font-size: 10px;
+  }
+
+  .dashboard-btn-red {
+    margin-left: 5px;
+  }
+  .dashboard-banner {
+    width: 80%;
+    /* height: 25vh; */
+    margin: 10px auto;
+  }
+  .dashboard-img {
+    display: none;
+  }
+  .dashboard-box {
+    font-size: 55px;
+    text-align: left;
+    margin-left: 10px;
+  }
+  .dashboard-name {
+    font-size: 15px;
+  }
+  .dashboard-box p {
+    font-size: 10px;
+  }
+  .dashboard-welcome {
+    font-size: 30px;
+  }
+  .dashboard-p {
+    font-size: 20px;
+  }
+
+  .dashboard-filter {
+    display: block;
+  }
+
+  .dashboard-connect {
+    font-size: 20px;
+  }
+
+  .dashboard-filterIcon {
+    width: 90%;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 5px;
+  }
+
+  .dashboard-schools {
+    width: 60%;
+    display: block;
+    padding: 10px;
+    margin: 5px auto;
+    text-align: center;
+    font-size: 10px;
+  }
+  .dashboard-web {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .dashboard-banner {
+    /* width: 90%; */
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .dashboard-box {
+    width: 60%;
+    font-size: 5px;
+    text-align: left;
+    margin-left: 10px;
+    line-height: 2rem;
+  }
+  .dashboard-name {
+    font-size: 15px;
+  }
+  .dashboard-box p {
+    font-size: 15px;
+  }
+  .dashboard-welcome {
+    font-size: 30px;
+  }
+  .dashboard-p {
+    font-size: 25px;
+    letter-spacing: 0.2em;
+  }
+
+  .dashboard-filter {
+    display: block;
+  }
+
+  .dashboard-connect {
+    font-size: 20px;
+  }
+
+  .dashboard-filterIcon {
+    width: 90%;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 5px;
+  }
+
+  .dashboard-schools {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 10px;
+    text-align: center;
+    font-size: 10px;
+  }
+  .dashboard-web {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .dashboard-banner {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    border: 2px solid #eee;
+    width: 70vw;
+    padding: 20px;
+    background-color: #004777;
+    border-radius: 10px;
+    color: aliceblue;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .dashboard-box {
+    font-size: 55px;
+    text-align: left;
+    margin-left: 70px;
+    line-height: 0.8em;
+  }
+  .dashboard-name {
+    font-size: 20px;
+  }
+  .dashboard-box p {
+    font-size: 20px;
+  }
+  .dashboard-welcome {
+    font-size: 50px;
+  }
+  .dashboard-p {
+    font-size: 20px;
+  }
+
+  .dashboard-filter {
+    width: 70vw;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .dashboard-connect {
+    font-size: 20px;
+  }
+
+  .dashboard-filterIcon {
+    width: 50%;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 5px;
+  }
+  .dashboard-schools {
+    width: 70vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 10px auto;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+}

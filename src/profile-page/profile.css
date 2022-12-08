@@ -1,0 +1,164 @@
+.profile-wrap {
+  width: 100%;
+  background: rgba(240, 248, 255, 0.342);
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  height:100vh;
+}
+
+.profile-page {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: none;
+  width: 55vw;
+  height: 30vh;
+  padding: 20px;
+  /* background: linear-gradient(right(#004777)); */
+  background-color: #162253;
+  /* background: url(../assets/bgimage.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+  border-radius: 10px;
+  color: aliceblue;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.profile-pic {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 5px solid white;
+  border-radius: 50%;
+  background: url(../assets/round1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 120px;
+  margin-left: 30px;
+}
+
+.profile-name {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 10px;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+}
+
+.Profile-EduSec {
+  width: 55vw;
+  height: 25vh;
+  margin: 30px auto;
+  background-color: #162253;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-left: 400px;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.social-icons {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  padding-top: 10px;
+  /* padding-right: 10px; */
+}
+
+.user-icons {
+  color: aliceblue;
+  padding-top: 10px;
+}
+
+.user-icons:hover {
+  transition: all 0.5s;
+  scale: 1.3;
+}
+
+.edu-details{
+    letter-spacing: .1rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 730px) {
+
+    .profile-page{
+        width: 80%;
+        height: 25vh;
+        padding: 5px;
+        font-size: 12px;
+    }
+    .profile-pic{
+        /* position: relative; */
+        /* display: flex;
+        justify-content: center; */
+        height: 50px;
+        width: 50px;
+        /* margin-bottom: 20px; */
+        border: 2px solid white;
+    }
+    .profile-title{
+        font-size: 10px;
+    }
+
+    .profile-name{
+        /* align-items: flex-start; */
+        padding-top: 20px;
+    }
+    .social-icons{
+        width: 50%;
+        font-size: 15px;
+    }
+
+    .Profile-EduSec{
+        width: 80%;
+        height: 20vh;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 10px;
+        padding: 10px;
+    }
+
+
+    .edu-details{
+        letter-spacing: 0;
+        font-size: 12px;
+    }
+    
+}
+
+ @media screen and (min-width: 750px) {
+    .profile-page{
+        height: 30vh;
+    }
+    .Profile-EduSec{
+        padding: 15px;
+        height: 25vh;
+    }
+
+    .profile-title{
+        font-size: 15px;
+    }
+    
+    .profile-pic{
+        width: 100px;
+        height: 100px;
+    }
+
+} 

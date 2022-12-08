@@ -1,0 +1,341 @@
+.edit-wrap {
+  width: 100%;
+  background: rgba(240, 248, 255, 0.342);
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+}
+
+.Edit-navbar {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  /* background-color: aliceblue; */
+}
+
+.Edit-Profile-text {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #004777;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.profile-icon {
+  margin-right: 3px;
+  margin-left: 5px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #004777;
+}
+.profile-icon:hover {
+  scale: 1.2;
+  transition: ease-in-out 0.5s;
+}
+
+.edit-profile-page {
+  margin-left: 20%;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  /* position: relative; */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.header-writeup {
+  margin: 20px 50px;
+  color: rgb(86, 83, 83);
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid black; */
+}
+.edit-avatar {
+  width: 20vw;
+  border-radius: 50%;
+  /* border: 1px solid black; */
+  box-shadow: 0 0 3px gray;
+}
+.edit-avatar:hover {
+  filter: brightness(0.6);
+}
+.edit-avatar-div {
+  /* border: 1px solid black; */
+  width: 20vw;
+  margin-top: 20px;
+  margin-left: 12vw;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.profile-info {
+  width: 45vw;
+  height: 10vh;
+  font-weight: bold;
+  /* border: 1px solid black; */
+  /* margin-left: 50vw; */
+  margin-top: 2vh;
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
+}
+#profilePhotoInput {
+  display: none;
+}
+
+.profile-list {
+  width: 25vw;
+  height: 8vh;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(74, 72, 72);
+  font-weight: bold;
+  color: white;
+  transition: 0.5s;
+}
+.list-middle {
+  width: 15vw;
+  height: 8vh;
+  box-shadow: 0 2px 2px -2px green;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.profile-list:hover {
+  height: 9vh;
+  background-color: #139054;
+  border-radius: 10px;
+}
+.list-middle:hover > .profile-icon {
+  color: rgb(111, 3, 3);
+}
+.list-middle:hover > .list-writeup {
+  color: rgb(65, 61, 61);
+}
+.list-writeup {
+  /* border: 1px solid black; */
+  margin-left: 2vw;
+}
+.profile-link {
+  text-decoration: none;
+  color: white;
+}
+.edit-form {
+  width: 60vw;
+  /* height: 100vh; */
+  /* margin: 5vh 35vw; */
+  color: #004777;
+  font-weight: bold;
+  /* border: 1px solid black; */
+}
+.edit-names {
+  width: 60vw;
+  height: 10vh;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+}
+.edit-input-left {
+  width: 26vw;
+  height: 10vh;
+  /* border: 1px solid black; */
+}
+.edit-input-right {
+  width: 26vw;
+  height: 10vh;
+  /* border: 1px solid black; */
+  /* padding-right: 8vw; */
+  margin-right: 6vw;
+}
+
+.edit-span {
+  font-size: 15px;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.edit-input option {
+  background-color: #94cdf3;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  cursor: pointer;
+}
+.edit-label {
+  margin-right: 10vw;
+  font-size: 20px;
+}
+.edit-input {
+  width: 20vw;
+  height: 6vh;
+  margin-top: 1vh;
+  padding-left: 1vw;
+  outline: none;
+  border-radius: 4px;
+  border: 2px solid #94cdf3;
+  background-color: aliceblue;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+.edit-email-input {
+  width: 48vw;
+  height: 6vh;
+  margin-right: 3.9vw;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  outline: none;
+  border-radius: 4px;
+  border: 2px solid #e8eaed;
+  background-color: #f2f3f5;
+  padding-left: 1vw;
+}
+.edit-email-label {
+  margin-right: 49vw;
+  padding-left: 1vw;
+}
+.edit-address-label {
+  margin-right: 46vw;
+}
+.edit-tel-label {
+  margin-right: 41vw;
+}
+.edit-city {
+  width: 60vw;
+  height: 10vh;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+}
+.edit-city-label {
+  margin-right: 17vw;
+}
+.edit-zip-label {
+  margin-right: 10vw;
+}
+.edit-local-label {
+  margin-right: 13vw;
+}
+.errormessage {
+  color: red;
+  font-size: small;
+}
+.edit-items {
+  margin-left: 50vw;
+}
+.sidebar-pic {
+  width: 20vw;
+  margin-top: 15vh;
+}
+.bankcard {
+  margin-left: 45vw;
+  width: 30vw;
+}
+.bankform {
+  width: 50vw;
+  height: 60vh;
+  /* border: 1px solid black; */
+  margin-left: 35vw;
+  color: rgb(74, 72, 72);
+  font-weight: bold;
+}
+.cardinput {
+  width: 50vw;
+  height: 5.5vh;
+  margin-top: 1vh;
+  border-radius: 5px;
+  padding-left: 1vw;
+  outline: none;
+  border: 2px solid #e8eaed;
+  background-color: #f2f3f5;
+}
+.cardholder {
+  width: 50vw;
+  height: 10vh;
+  /* border: 1px solid black; */
+  display: flex;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  justify-content: space-between;
+}
+.cardholderleft {
+  width: 25vw;
+  height: 10vh;
+  /* border: 1px solid black; */
+}
+.cardholderright {
+  width: 23vw;
+  height: 10vh;
+  /* border: 1px solid black; */
+}
+.cardholderinput {
+  width: 23vw;
+  height: 5.5vh;
+  margin-top: 1vh;
+  border-radius: 5px;
+  padding-left: 1vw;
+  outline: none;
+  border: 2px solid #e8eaed;
+  background-color: #f2f3f5;
+}
+.Save-btn {
+  width: 20vw;
+  background-color: #004777;
+  color: aliceblue;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 7%;
+}
+
+.Save-btn:hover {
+  color: white;
+  background-color: rgb(19, 50, 19);
+}
+
+@media screen and (max-width: 500px) {
+    .profile-icon{
+        font-size: 20px;
+        margin-left: 2px;
+    }
+    .Edit-Profile-text{
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+  .edit-profile-page {
+    display: block;
+  }
+
+  .edit-names {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .edit-city {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+
+  .edit-input-left,
+  .edit-input-right {
+    width: 100%;
+    /* margin-bottom: 10px; */
+  }
+  .edit-input {
+    width: 100%;
+  }
+}

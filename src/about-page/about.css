@@ -1,0 +1,119 @@
+.about-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(../assets/bgimage.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  row-gap: 30px;
+}
+.about-heading {
+  width: 100%;
+  text-align: center;
+  color: rgb(3, 3, 82);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 100px;
+  margin-top: 70px;
+  font-weight: 800;
+}
+.about-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 100px;
+}
+.about-section {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aboutp {
+  width: 45%;
+  color: rgb(3, 3, 82);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 50px;
+  padding-left: 5px;
+  line-height: 2.5em;
+  font-weight: 600;
+}
+.aboutimgwrap {
+  width: 45%;
+  padding: 10px 0px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 15px rgba(216, 112, 147, 0.26),
+    -2px -2px 15px rgba(216, 112, 147, 0.26);
+}
+.aboutimg {
+  width: 100%;
+  border-radius: 10px;
+}
+@media screen and (max-width: 1500px) {
+    .aboutp {
+        font-size: 45px;
+        line-height: 2.5em;
+        font-weight: 500;
+      }
+      .about-heading {
+        font-size: 90px;
+        font-weight: 800;
+      }
+}
+@media screen and (max-width: 1250px) {
+    .aboutp {
+        font-size: 40px;
+        line-height: 2em;
+        font-weight: 450;
+      }
+      .about-heading {
+        font-weight: 700;
+      }
+}
+@media screen and (max-width: 1050px) {
+    .aboutp {
+        font-size: 35px;
+        line-height: 1.7em;
+        font-weight: 400;
+      }
+      .about-heading {
+        font-size: 80px;
+        font-weight: 700;
+      }
+}
+@media screen and (max-width: 880px) {
+    .about-heading {
+        font-size: 70px;
+        font-weight: 600;
+      }
+  .about-section {
+    flex-direction: column;
+  }
+  .about-wrap {
+    row-gap: 20px;
+  }
+  .even {
+    flex-direction: column-reverse;
+  }
+  .aboutp {
+    width: 90%;
+  }
+  .aboutimgwrap {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+    .about-heading {
+        font-size: 40px;
+        font-weight: 500;
+      }
+    .aboutp {
+        width: 90%;
+        font-size: 25px;
+        line-height: 1.5em;
+      }
+}
