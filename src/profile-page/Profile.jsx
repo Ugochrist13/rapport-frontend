@@ -11,7 +11,7 @@ import {
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Logo from "../assets/logo.svg";
-import Api from '../api/Api'
+import Api from "../api/Api";
 
 const Profile = () => {
   const [profile, setProfile] = useState({});
@@ -48,51 +48,57 @@ const Profile = () => {
           </nav>
           <div className="profile-page">
             <p>{error}</p>
-            <div className="profile-name">
-              <div>
-                <h1>{profile?.firstName}</h1>
-              </div>
-              <br />
-              <div>
-                <h3>{profile?.occupation}</h3>
-              </div>
-              <br />
-              <div>
-                <small>{profile?.gender}</small>
-              </div>{" "}
-              <br />
-              <div className="user-location">
-                <p>{profile.location}</p>
-              </div>
-              <div className="social-icons">
-                <Link to={profile.instagramLink} className="user-icons">
+            {profile?.map(({ currentLocation, gender, maritalStatus, phoneNumber, secondarySchool, tertiarySchool, facultyDepartment, profession, employmentStatus, yearOfStudy, whatsApp, twitter, linkedIn, faceBook, instagram}) => {
+                return (
                   <div>
-                    <FaInstagram />
+                    <div className="profile-name">
+                      <div>
+                        <h1>{firstName}</h1>
+                      </div>
+                      <br />
+                      <div>
+                        <h3>{occupation}</h3>
+                      </div>
+                      <br />
+                      <div>
+                        <small>{gender}</small>
+                      </div>{" "}
+                      <br />
+                      <div className="user-location">
+                        <p>{location}</p>
+                      </div>
+                      <div className="social-icons">
+                        <Link to={instagramLink} className="user-icons">
+                          <div>
+                            <FaInstagram />
+                          </div>
+                        </Link>
+                        <Link to={twitterLink} className="user-icons">
+                          <div>
+                            <FaTwitter />
+                          </div>
+                        </Link>
+                        <Link to={facebookLink} className="user-icons">
+                          <div>
+                            <FaFacebook />
+                          </div>
+                        </Link>
+                        <Link to={whatsappLink} className="user-icons">
+                          <div>
+                            <FaWhatsapp />
+                          </div>
+                        </Link>
+                        <Link to={email} className="user-icons">
+                          <div>
+                            <FaMailBulk />
+                          </div>
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="profile-pic">{image}</div>
                   </div>
-                </Link>
-                <Link to={profile.twitterLink} className="user-icons">
-                  <div>
-                    <FaTwitter />
-                  </div>
-                </Link>
-                <Link to={profile.facebookLink} className="user-icons">
-                  <div>
-                    <FaFacebook />
-                  </div>
-                </Link>
-                <Link to={profile.whatsappLink} className="user-icons">
-                  <div>
-                    <FaWhatsapp />
-                  </div>
-                </Link>
-                <Link to={profile.email} className="user-icons">
-                  <div>
-                    <FaMailBulk />
-                  </div>
-                </Link>
-              </div>
-            </div>
-            <div className="profile-pic">{profile.image}</div>
+                );
+              })}
           </div>
 
           <div className="Profile-EduSec">
@@ -100,9 +106,9 @@ const Profile = () => {
               <h5 style={{ textDecoration: "underline" }}>Education:</h5>
               <div className="edu-details">
                 <p>Topmax City College, Ogba, Lagos.</p>
-                <p>{profile.schoolAttended}</p>
-                <p>{profile.courseOfStudy}</p>
-                <small>{profile.yearOfStudy}</small>
+                <p>{schoolAttended}</p>
+                <p>{courseOfStudy}</p>
+                <small>{yearOfStudy}</small>
               </div>
             </div>
           </div>
